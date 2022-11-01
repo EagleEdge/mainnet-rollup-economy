@@ -2,7 +2,15 @@ from web3 import Web3
 from hexbytes import HexBytes
 
 # Connect to Infura endpoint using web3 API
-provider_url = 'https://mainnet.infura.io/v3/<YOUR INFURA ACCOUNT API KEY>'
+# 'API-KEY' is your Infura API Key
+
+# Ethereum mainnet
+# provider_url = 'https://mainnet.infura.io/v3/API-KEY'
+# Arbitrum mainnet
+provider_url = 'https://arbitrum-mainnet.infura.io/v3/API-KEY'
+# Optimism mainet
+# provider_url = 'https://optimism-mainnet.infura.io/v3/API-KEY'
+
 w3 = Web3(Web3.HTTPProvider(provider_url))
 w3.isConnected()
 
